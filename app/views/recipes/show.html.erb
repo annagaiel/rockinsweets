@@ -1,0 +1,12 @@
+<h1 class="text-center">
+	<%= @recipe.title %>
+</h1>
+
+<div class="card-box col-xs-10 col-xs-offset-1">
+	<p>
+		<strong>Instruction:</strong>
+		<%= @recipe.text %>
+	</p>
+
+	<%= link_to 'Back', recipes_path , :class => 'btn btn-primary' %>
+</div>
