@@ -1,1 +1,10 @@
-<h1>Recipes</h1>
+<h1 class="text-center">Recipes</h1>
+
+<div class="card-box col-xs-10 col-xs-offset-1">
+<%= simple_form_for @recipe do |f| %>
+	<%= f.input :title %>
+	<%= f.input :text, label: 'Instructions' %>
+	<br />
+	<%= f.submit 'Create Recipe', :class => 'btn btn-danger' %>
+<% end %>
+</div>
